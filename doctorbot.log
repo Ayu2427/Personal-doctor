@@ -1,0 +1,120 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 667-144-701
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:09:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:09:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:10:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:10:32] "[32mPOST /register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:10:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:10:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:10:43] "GET /chat HTTP/1.1" 200 -
+ERROR:root:REQUEST_DENIED (You’re calling a legacy API, which is not enabled for your project. To get newer features and more functionality, switch to the Places API (New) or Routes API. Learn more: https://developers.google.com/maps/legacy#LegacyApiNotActivatedMapError)
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:11:24] "[35m[1mPOST /chat_api HTTP/1.1[0m" 500 -
+ERROR:root:REQUEST_DENIED (You’re calling a legacy API, which is not enabled for your project. To get newer features and more functionality, switch to the Places API (New) or Routes API. Learn more: https://developers.google.com/maps/legacy#LegacyApiNotActivatedMapError)
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:11:43] "[35m[1mPOST /chat_api HTTP/1.1[0m" 500 -
+ERROR:root:REQUEST_DENIED (You’re calling a legacy API, which is not enabled for your project. To get newer features and more functionality, switch to the Places API (New) or Routes API. Learn more: https://developers.google.com/maps/legacy#LegacyApiNotActivatedMapError)
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:11:49] "[35m[1mPOST /chat_api HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 667-144-701
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:18:36] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:18:37] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:18:38] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:18:38] "GET /chat HTTP/1.1" 200 -
+ERROR:root:REQUEST_DENIED (You’re calling a legacy API, which is not enabled for your project. To get newer features and more functionality, switch to the Places API (New) or Routes API. Learn more: https://developers.google.com/maps/legacy#LegacyApiNotActivatedMapError)
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:18:52] "[35m[1mPOST /chat_api HTTP/1.1[0m" 500 -
+ERROR:root:REQUEST_DENIED (You’re calling a legacy API, which is not enabled for your project. To get newer features and more functionality, switch to the Places API (New) or Routes API. Learn more: https://developers.google.com/maps/legacy#LegacyApiNotActivatedMapError)
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:18:52] "[35m[1mPOST /chat_api HTTP/1.1[0m" 500 -
+ERROR:root:REQUEST_DENIED (You’re calling a legacy API, which is not enabled for your project. To get newer features and more functionality, switch to the Places API (New) or Routes API. Learn more: https://developers.google.com/maps/legacy#LegacyApiNotActivatedMapError)
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:18:52] "[35m[1mPOST /chat_api HTTP/1.1[0m" 500 -
+ERROR:root:REQUEST_DENIED (You’re calling a legacy API, which is not enabled for your project. To get newer features and more functionality, switch to the Places API (New) or Routes API. Learn more: https://developers.google.com/maps/legacy#LegacyApiNotActivatedMapError)
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:18:55] "[35m[1mPOST /chat_api HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\dell\\Desktop\\Personal-Doctor\\config.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\dell\\Desktop\\Personal-Doctor\\config.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 667-144-701
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 667-144-701
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 667-144-701
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:21:59] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:22:00] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:22:00] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:22:00] "GET /chat HTTP/1.1" 200 -
+ERROR:root:REQUEST_DENIED (You’re calling a legacy API, which is not enabled for your project. To get newer features and more functionality, switch to the Places API (New) or Routes API. Learn more: https://developers.google.com/maps/legacy#LegacyApiNotActivatedMapError)
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:22:09] "[35m[1mPOST /chat_api HTTP/1.1[0m" 500 -
+ERROR:root:REQUEST_DENIED (You’re calling a legacy API, which is not enabled for your project. To get newer features and more functionality, switch to the Places API (New) or Routes API. Learn more: https://developers.google.com/maps/legacy#LegacyApiNotActivatedMapError)
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:22:43] "[35m[1mPOST /chat_api HTTP/1.1[0m" 500 -
+ERROR:root:REQUEST_DENIED (You’re calling a legacy API, which is not enabled for your project. To get newer features and more functionality, switch to the Places API (New) or Routes API. Learn more: https://developers.google.com/maps/legacy#LegacyApiNotActivatedMapError)
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:23:01] "[35m[1mPOST /chat_api HTTP/1.1[0m" 500 -
+ERROR:root:REQUEST_DENIED (You’re calling a legacy API, which is not enabled for your project. To get newer features and more functionality, switch to the Places API (New) or Routes API. Learn more: https://developers.google.com/maps/legacy#LegacyApiNotActivatedMapError)
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:23:02] "[35m[1mPOST /chat_api HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\dell\\Desktop\\Personal-Doctor\\config.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\dell\\Desktop\\Personal-Doctor\\config.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 667-144-701
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:38:35] "GET /chat HTTP/1.1" 200 -
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=hospitals+near+25.3036473%2C82.9850994&format=json&limit=3
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:38:43] "POST /chat_api HTTP/1.1" 200 -
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001A02D4BC910>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)')': /search?q=hospitals+near+25.3036473%2C82.9850994&format=json&limit=3
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:39:14] "POST /chat_api HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:42:21] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:42:23] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:42:23] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:42:23] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:42:24] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:42:24] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:42:24] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:42:24] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:42:24] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 667-144-701
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:42:57] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2025 23:43:03] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 137-802-103
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2025 00:16:35] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2025 00:16:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2025 00:16:36] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2025 00:16:52] "POST /chat_api HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2025 00:18:44] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2025 00:18:44] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2025 00:19:03] "POST /chat_api HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2025 00:19:21] "POST /chat_api HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2025 00:19:42] "POST /chat_api HTTP/1.1" 200 -
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=hospitals+near+26.8466937%2C80.946166&format=json&limit=3
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=hospitals+near+26.8466937%2C80.946166&format=json&limit=3
+WARNING:root:OSM lookup failed: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=hospitals+near+26.8466937%2C80.946166&format=json&limit=3 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2025 00:20:03] "POST /chat_api HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2025 00:23:25] "POST /chat_api HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2025 00:23:47] "POST /chat_api HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2025 00:24:10] "POST /chat_api HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2025 00:26:38] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2025 00:26:38] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2025 00:32:34] "POST /chat_api HTTP/1.1" 200 -

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Doctor - Chat</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #2c88d9;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    #chat-container {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      height: 80vh;
+    }
+    #chat-box {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+      border-bottom: 1px solid #ddd;
+    }
+    .message {
+      margin: 10px 0;
+      max-width: 70%;
+      padding: 10px 15px;
+      border-radius: 15px;
+      line-height: 1.5em;
+      word-wrap: break-word;
+    }
+    .user {
+      background: #2c88d9;
+      color: white;
+      margin-left: auto;
+      border-bottom-right-radius: 5px;
+    }
+    .doctor {
+      background: #e4e6eb;
+      color: #333;
+      margin-right: auto;
+      border-bottom-left-radius: 5px;
+    }
+    #input-area {
+      display: flex;
+      padding: 15px;
+      background: #f4f7f9;
+      border-top: 1px solid #ddd;
+    }
+    #input-area input {
+      flex: 1;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      outline: none;
+      font-size: 14px;
+      margin-right: 10px;
+    }
+    #input-area button {
+      background: #2c88d9;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    #input-area button:hover {
+      background: #226bb0;
+    }
+  </style>
+</head>
+<body>
+  <header>👨‍⚕️ Personal Doctor Chat</header>
+  <div id="chat-container">
+    <div id="chat-box"></div>
+    <div id="input-area">
+      <input id="input" type="text" placeholder="Describe your symptoms...">
+      <button onclick="send()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    async function send() {
+      const msg = document.getElementById('input').value;
+      if (!msg.trim()) return;
+
+      // Show user message
+      appendMessage(msg, "user");
+      document.getElementById('input').value = "";
+
+      // Try to get geolocation
+      navigator.geolocation.getCurrentPosition(async pos => {
+        const coords = `${pos.coords.latitude},${pos.coords.longitude}`;
+        const res = await fetch('/chat_api', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({message: msg, location: coords})
+        });
+        const data = await res.json();
+        formatDoctorResponse(data);
+      }, async () => {
+        // If location fails fallback: New York
+        const res = await fetch('/chat_api', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({message: msg, location: "New York"})
+        });
+        const data = await res.json();
+        formatDoctorResponse(data);
+      });
+    }
+
+    function appendMessage(text, sender) {
+      const chatBox = document.getElementById('chat-box');
+      const div = document.createElement("div");
+      div.classList.add("message", sender);
+      div.innerHTML = text;
+      chatBox.appendChild(div);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    function formatDoctorResponse(data) {
+      if (data.diagnosis) {
+        const response = `
+          <b>Condition:</b> ${data.diagnosis}<br>
+          <b>Medicines:</b> ${data.medicine}<br>
+          <b>Nearby Hospitals:</b><br>
+          ${data.nearby_hospitals.map(h => "🏥 " + h.name + " - " + h.address).join("<br>")}
+          <br><small>${data.disclaimer}</small>
+        `;
+        appendMessage(response, "doctor");
+      } else if (data.error) {
+        appendMessage("⚠️ " + data.error, "doctor");
+      } else {
+        appendMessage("Sorry, I couldn’t understand your input.", "doctor");
+      }
+    }
+  </script>
+</body>
+</html>

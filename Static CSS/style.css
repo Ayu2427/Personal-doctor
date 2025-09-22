@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #2c88d9;
+  color: white;
+  border-radius: 8px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+}
+
+header .tagline {
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+
+.intro {
+  margin: 20px 0;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.intro ul {
+  list-style-type: "💊 ";
+  margin-left: 20px;
+  line-height: 1.6em;
+}
+
+.auth {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.login-box, .register-box {
+  flex: 1;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #2c88d9;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #226bb0;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+}

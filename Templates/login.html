@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Doctor - AI Health Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>👨‍⚕️ Personal Doctor</h1>
+      <p class="tagline">Your AI-powered healthcare assistant (Demo only)</p>
+    </header>
+    
+    <section class="intro">
+      <h2>Welcome!</h2>
+      <p>
+        This chatbot can help you by:
+      </p>
+      <ul>
+        <li>✅ Suggesting conditions based on your symptoms</li>
+        <li>✅ Recommending common over-the-counter medicines</li>
+        <li>✅ Showing nearby hospitals using free OpenStreetMap data</li>
+        <li>⚠️ <strong>Disclaimer:</strong> This is a demo app, not medical advice.</li>
+      </ul>
+    </section>
+
+    <section class="auth">
+      <div class="login-box">
+        <h2>Sign In</h2>
+        <form action="/login" method="POST">
+          <input type="text" name="username" placeholder="Username" required><br>
+          <input type="password" name="password" placeholder="Password" required><br>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+
+      <div class="register-box">
+        <h2>New User?</h2>
+        <form action="/register" method="POST">
+          <input type="text" name="username" placeholder="Choose Username" required><br>
+          <input type="password" name="password" placeholder="Choose Password" required><br>
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>⚠️ This is a <b>demo healthcare chatbot</b> created for educational & portfolio purposes.  
+      Always consult a real doctor for medical advice.</p>
+    </footer>
+  </div>
+</body>
+</html>
